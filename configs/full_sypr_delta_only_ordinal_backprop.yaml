@@ -1,0 +1,29 @@
+name: full_sypr_delta_only_ordinal_backprop_zero_threshold
+effort:
+  alpha: 3.215399742126465
+  beta_0: -1.3351376056671143
+  beta_V: 0.0
+  beta_delta: 4.2306365966796875
+  penalty_weight: 0.3297201991081238
+utterance:
+  alpha: 3.215399742126465
+  beta_0: -1.3351376056671143
+  beta_V: 0.0
+  beta_delta: 4.2306365966796875
+  penalty_weight: 0.14948706328868866
+individual:
+  alpha: 3.215399742126465
+  beta_0: -1.3351376056671143
+  beta_V: 0.0
+  beta_delta: 4.2306365966796875
+  penalty_weight: 0.27035728096961975
+stakes_multiplier: 1.0
+metadata:
+  source: published_metric_config
+  fit_method: backprop
+  variant: full_sypr_delta_only_ordinal
+  train_bce: 0.1690569669008255
+  classifier_slope: 0.6932471990585327
+  classifier_intercept: 0.0
+  epochs: 300
+  lr: 0.05

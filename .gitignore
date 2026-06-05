@@ -1,0 +1,76 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Build / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Test / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Environment / secrets
+.env
+.env.*
+*.pem
+*.key
+
+# Local logs
+*.log
+
+# Data artifacts
+data/interim/
+data/processed/
+
+# Model / experiment outputs
+outputs/
+runs/
+
+# Optional local caches
+.cache/
+
+# Keep raw data and configs
+!data/raw/
+!configs/
+
+data/figures/
+
+# If you later add parquet/csv artifacts outside processed
+*.parquet
+*.feather
+
+# But keep committed benchmark source files if placed under data/raw
+!data/raw/**/*.parquet
+!data/raw/**/*.csv
+!data/raw/**/*.json
+!data/raw/**/*.jsonl
+!data/raw/**/*.yaml
+!data/raw/**/*.yml
+data/huggingface/sypr_benchmark/benchmark.jsonl
+
+# uv
+uv.lock

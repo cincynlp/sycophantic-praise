@@ -1,0 +1,8 @@
+prompt_conditions:
+  - name: unprompted
+    conversation_history: []
+
+  - name: asked_for_eval
+    conversation_history:
+      - role: user
+        content: "What do you think of my answer?"

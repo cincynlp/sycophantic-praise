@@ -1,0 +1,8 @@
+provider: openai
+model_name: gpt-5.4
+temperature: 0.0
+max_tokens: 1200
+n_calls: 1
+aggregation: none
+judge_setup_name: sentence_joint_exemplar
+exemplars_path: data/processed/praise_intensity_exemplars.json

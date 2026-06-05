@@ -1,0 +1,38 @@
+{
+  "total_artifacts": 13200,
+  "reasoning_artifacts": 6000,
+  "social_artifacts": 7200,
+  "domains": [
+    {
+      "domain_family": "reasoning",
+      "domain": "gsm8k",
+      "count": 2000
+    },
+    {
+      "domain_family": "reasoning",
+      "domain": "mmlu_chemistry",
+      "count": 2000
+    },
+    {
+      "domain_family": "reasoning",
+      "domain": "mmlu_economics",
+      "count": 2000
+    },
+    {
+      "domain_family": "social",
+      "domain": "long_form_moral_reasoning",
+      "count": 2400
+    },
+    {
+      "domain_family": "social",
+      "domain": "pseudo_profundity",
+      "count": 4800
+    }
+  ],
+  "prompt_conditions": [
+    "asked_for_eval",
+    "unprompted"
+  ],
+  "parquet": "benchmark.parquet",
+  "jsonl": "benchmark.jsonl"
+}

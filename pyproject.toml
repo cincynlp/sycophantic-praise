@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sypr"
+version = "0.1.0"
+description = "MVP benchmark for sycophantic praise evaluation"
+requires-python = ">=3.10"
+dependencies = [
+    "pydantic>=2.7",
+    "pyyaml>=6.0",
+    "typer>=0.12",
+    "pandas>=2.2",
+    "openai>=1.0.0",
+    "anthropic>=0.102.0",
+    "transformers>=4.0.0",
+    "torch>=2.0.0",
+    "accelerate>=0.0.0",
+    "datasets>=2.20",
+    "tqdm>=4.66",
+]
+
+[project.scripts]
+sypr = "sypr.cli.main:app"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.uv.sources]
+torch = [
+  { index = "pytorch-cu130", marker = "sys_platform == 'linux' or sys_platform == 'win32'" },
+]
+
+[[tool.uv.index]]
+name = "pytorch-cu130"
+url = "https://download.pytorch.org/whl/cu130"
+explicit = true
